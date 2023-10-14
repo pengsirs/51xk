@@ -1,0 +1,49 @@
+
+
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<title>Flat Surface Shader</title>
+<meta name="author" content="Matthew Wagerfield"/>
+<meta name="keywords" content="flat,surface,shader,Float32Array"/>
+<meta name="description" content="Simple, lightweight Flat Surface Shader for rendering lit triangles."/>
+<meta property="og:description" content="Simple, lightweight Flat Surface Shader for rendering lit triangles."/>
+<meta property="og:site_name" content="Flat Surface Shader"/>
+<meta property="og:title" content="Flat Surface Shader"/>
+<meta property="og:type" content="website"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+
+</head>
+<body>
+
+<div id="container" class="container">
+	<div id="output" class="container"></div>
+	<div id="vignette" class="overlay vignette"></div>
+	<div id="noise" class="overlay noise"></div>
+	<div id="ui" class="wrapper">
+		<header id="header" class="header">
+			<img class="logo" src="css/logo.svg">
+			<h1>平面着色</h1>
+		</header>
+		<article id="information" class="information">
+			<p>承认吧，3D很酷。但是，你知道什么更酷吗？二维。<br />我爱WebGL，但不幸的是它不工作，到处。</p>
+			<p>这种灯光模拟可以被配置为使用画布元素的2D上下文或SVG多边形数组来绘制三角形。它还采用天然float32arrays存储高度优化的计算数值数据。</p>
+		</article>
+	</div>
+</div>
+
+<div id="controls" class="controls"></div>
+
+<script src="js/prefixfree.min.js"></script>
+<script src="js/dat.gui.min.js"></script>
+<script src="js/fss.min.js"></script>
+<script src="js/example.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div style="text-align: center; position: fixed; bottom: 0; width: 100%; line-height: 150%; background:rgba(0,0,0,0.1); border-top: 1px solid rgba(255,255,255,.1); z-index: 11000; color:rgba(255,255,255,.4); font-size: 12px; padding: 5px 0;">本素材由源代码设计店铺收集整理，<a style="color:#0066ff" target="_blank" href="https://shop102724502.taobao.com/">点此购买最新版</a>
+	</div>
+</body>
+</html>
